@@ -2,12 +2,11 @@
     <div class="mt-6 text-sm flex justify-between">
         <div class="flex">
             <div
-                class="border-b-2"
                 v-for="tab in tabsLeft"
                 :key="tab.name"
                 :name="tab.name"
                 :selected="tab.selected"
-                :class="{ 'border-blue': tab.selected, 'border-grey-lighter': !tab.selected }"
+                :class="{ 'border-b-2 border-blue': tab.selected, 'border-b-1 border-grey-light': !tab.selected }"
             >
                 <a @click="select(tab)" class="block self-end text-grey-dark hover:text-grey-darker no-underline pb-3 px-4" href="#" v-text="tab.name"></a>
             </div>
@@ -15,12 +14,11 @@
 
         <div class="flex">
             <div
-                class="border-b-2"
                 v-for="tab in tabsRight"
                 :key="tab.name"
                 :name="tab.name"
                 :selected="tab.selected"
-                :class="{ 'border-blue': tab.selected, 'border-grey-lighter': !tab.selected }"
+                :class="{ 'border-b-2 border-blue': tab.selected, 'border-b-1 border-grey-light': !tab.selected }"
             >
                 <a @click="select(tab)" class="block self-end text-grey-dark hover:text-grey-darker no-underline pb-3 px-4" href="#" v-text="tab.name"></a>
             </div>
