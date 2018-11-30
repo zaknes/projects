@@ -1,11 +1,11 @@
 ## Base Tailwind Project
-This is a Tailwind project including a blank template ready for quick use. Includes PurgeCSS to remove any unused classes, shrinking the file size substantially.
+This is a skeleton Tailwind project. It includes PurgeCSS to remove any unused CSS classes, substantially shrinking the file size.
 
 ### Installation
-To create a new project using this template, first install the npm packages.
+To create a new project using this template, copy it and install the NPM packages.
 
 ```
-npm install
+yarn
 ```
 
-Run `npm run watch` to watch for changes or run `npm run production` to compile all assets, for production, using PurgeCSS for minification.
+Then, run `yarn watch` to watch for changes or run `yarn prod` to compile and minify assets using PurgeCSS.

@@ -1,6 +1,7 @@
-let mix = require('laravel-mix');
-let tailwind = require('tailwindcss');
 require('laravel-mix-purgecss');
+
+const mix = require('laravel-mix');
+const tailwind = require('tailwindcss');
 
 mix.setPublicPath('public')
   .less('src/less/app.less', 'public/css')
@@ -13,8 +14,6 @@ mix.setPublicPath('public')
 
 if (mix.inProduction()) {
   mix.purgeCss({
-    globs: [
-      path.join(__dirname, 'public/*.html'),
-    ],
+    folders: ['public', 'src']
   });
 }
