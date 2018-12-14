@@ -1,9 +1,15 @@
 import Vue from 'vue'
 
-Vue.component('search-results', require('./components/SearchResults.vue'))
-Vue.component('tab-item', require('./components/TabItem.vue'))
-Vue.component('tabs', require('./components/Tabs.vue'))
+import SearchResults from './components/SearchResults.vue'
+import TabItem from './components/TabItem.vue'
+import Tabs from './components/Tabs.vue'
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+    components: {
+        SearchResults,
+        TabItem,
+        Tabs
+    }
 })

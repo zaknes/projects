@@ -2,7 +2,7 @@
     <div class="mt-6 text-sm flex justify-between">
         <div class="flex">
             <div
-                v-for="tab in tabsLeft"
+                v-for="tab in tabsOnSide('left')"
                 :key="tab.name"
                 :name="tab.name"
                 :selected="tab.selected"
@@ -14,7 +14,7 @@
 
         <div class="flex">
             <div
-                v-for="tab in tabsRight"
+                v-for="tab in tabsOnSide('right')"
                 :key="tab.name"
                 :name="tab.name"
                 :selected="tab.selected"
@@ -46,16 +46,10 @@
                 this.tabs.map(each => each.selected = false)
                 this.tabs[this.tabs.indexOf(item)].selected = true
             },
-        },
 
-        computed: {
-            tabsLeft() {
-                return this.tabs.filter(tab => tab.position == 'left')
+            tabsOnSide(side) {
+                return this.tabs.filter(tab => tab.position == side)
             },
-
-            tabsRight() {
-                return this.tabs.filter(tab => tab.position == 'right')
-            }
         }
     }
 </script>

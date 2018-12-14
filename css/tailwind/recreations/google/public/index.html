@@ -11,12 +11,13 @@
     </head>
     <body class="font-sans font-normal leading-normal tracking-normal roman text-base bg-white text-grey-darkest antialised">
         <div id="app">
-            <div class="w-full bg-grey-lighter border-b px-6 sm:pt-6 sticky pin-t">
+            <div class="w-full bg-grey-lighter border-b pr-4 sm:px-6 sm:pt-6 sticky pin-t">
                 <div class="max-w-lg">
                     <div class="flex flex-row justify-between">
-                        <div class="pointer-events-none flex-no-shrink flex items-center md:items-start justify-center mr-6">
-                            <img class="w-24 md:w-32 h-auto" src="svg/google.svg" alt="Google Logo">
-                        </div>
+                        <a class="flex-no-shrink flex items-center p-4 sm:p-0 sm:mr-6" href="#">
+                            <img class="hidden pointer-events-none sm:block w-24 h-auto" src="svg/google.svg" alt="Google Logo">
+                            <img class="block pointer-events-none sm:hidden w-6 h-auto" src="svg/google-small.svg" alt="Google Logo">
+                        </a>
 
                         <div class="flex-grow w-full md:max-w-md">
                             <input
@@ -24,7 +25,7 @@
                                 tabindex="1"
                                 type="search"
                                 placeholder="Search..."
-                                class="my-6 sm:my-0 p-3 flex-grow appearance-none bg-white text-grey-darker text-base border focus:outline-none focus:shadow-outline shadow-transition rounded w-full h-auto"
+                                class="my-4 sm:my-0 p-3 flex-grow appearance-none bg-white text-grey-darker text-base border focus:outline-none focus:shadow-outline shadow-transition rounded w-full h-auto"
                             />
                         </div>
                     </div>
