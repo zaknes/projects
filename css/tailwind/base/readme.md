@@ -1,17 +1,39 @@
 ## Base Tailwind Project
-This is a skeleton Tailwind project. It includes PurgeCSS to remove any unused CSS classes, substantially shrinking the file size.
 
-### Installation
-To create a new project using this template, copy the directory and install the NPM dependencies.
+This is a skeleton Tailwind project that can be used for basic projects. It uses Laravel Mix to handle asset bundling as well as PurgeCSS to shrink file sizes.
 
-```
-yarn
-```
+I use this mainly for mocking up simple designs with Tailwind, usually without using Javascript, although this starter project makes it easy to drop in your favorite framework.
 
-Next, run the `watch` script to watch for changes you make or the `prod` script to compile and minify the assets.
+### Get Started
 
-```
-yarn watch
+1. Install dependencies using your preferred package manager:
 
-yarn prod
+    ```bash
+    # Using npm
+    npm install
+
+    # Using Yarn
+    yarn
+    ```
+
+2. Use the predefined `watch` script to watch for changes you make:
+
+    ```bash
+    # Using npm
+    npm run watch
+
+    # Using Yarn
+    yarn watch
+    ```
+
+### Build Assets
+
+To build assets, simply run the build script:
+
+```bash
+# Using npm
+npm run build
+
+# Using Yarn
+yarn build
 ```
