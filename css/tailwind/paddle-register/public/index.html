@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500">
+  </head>
+  <body class="font-sans font-normal leading-normal tracking-normal text-base bg-gray-100 text-gray-800 antialiased">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="p-6 w-full max-w-md">
+        <div class="mb-6 flex items-center justify-between">
+          <div>
+            <img class="w-24 h-auto" src="https://static.paddle.com/assets/images/logo/logo-primary.svg" alt="Paddle Logo">
+          </div>
+
+          <div class="flex items-baseline text-sm font-medium">
+            <span class="mr-3 text-brand-500 cursor-default">Sign up</span>
+            <a class="text-gray-600 hover:text-brand-800" href="#">Sign in</a>
+          </div>
+        </div>
+
+        <form action="#">
+          <div class="mb-4 block sm:flex">
+            <label class="block mb-4 sm:mb-0 sm:mr-3">
+              <input autofocus required type="text" name="firstname" placeholder="First Name" class="form-input w-full">
+            </label>
+
+            <label class="block">
+              <input required type="text" name="lastname" placeholder="Last Name" class="form-input w-full">
+            </label>
+          </div>
+
+          <div class="mb-4">
+            <label class="block">
+              <input required type="text" name="businessname" placeholder="Business Name" class="form-input w-full">
+            </label>
+          </div>
+
+          <div class="mb-4">
+            <label class="block">
+              <input required type="url" name="website" placeholder="Website" class="form-input w-full">
+            </label>
+          </div>
+
+          <div class="mb-4">
+            <label class="block">
+              <select required name="country" class="form-select w-full">
+                <option>United States</option>
+                <option>United Kingdom</option>
+              </select>
+            </label>
+          </div>
+
+          <hr class="my-6">
+
+          <div class="mb-4">
+            <label class="block">
+              <input required type="email" name="email" placeholder="Email Address" class="form-input w-full">
+            </label>
+          </div>
+
+          <div class="mb-4">
+            <label class="block">
+              <input required type="password" name="password" placeholder="Password" class="form-input w-full">
+            </label>
+          </div>
+
+          <hr class="my-6">
+
+          <div class="mb-6">
+            <label class="flex items-top">
+              <input type="checkbox" class="form-checkbox w-5 h-5">
+              <span class="ml-3 -mt-1 text-xs select-none text-gray-700">I would like to receive the monthly newsletter, which includes the best content, platform updates, and guides. You can opt-out at any time.</span>
+            </labekl>
+          </div>
+
+          <div>
+            <input type="submit" value="Create account &rarr;" class="px-4 py-3 w-full rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-medium cursor-pointer focus:outline-none focus:shadow-outline">
+
+            <div class="mt-6 text-xs text-gray-600">
+              By creating an account, you agree to our <a href="#" class="underline text-brand-500 hover:text-brand-600">terms & conditions</a>.
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
