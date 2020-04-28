@@ -22,6 +22,9 @@ module.exports = {
       boxShadow: theme => ({
         outline: `0 0 0 2px ${theme('colors.brand.500')}60`,
       }),
+      screens: {
+        'xs': '480px',
+      },
     },
 
     customForms: theme => ({
