@@ -61,4 +61,8 @@ module.exports = {
   plugins: [
     require('@tailwindcss/custom-forms'),
   ],
+  purge: [
+    './src/**/*.js',
+    './public/**/*.html',
+  ],
 }
