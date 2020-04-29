@@ -10,4 +10,8 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  purge: [
+    './src/**/*.js',
+    './public/**/*.html',
+  ]
 }
