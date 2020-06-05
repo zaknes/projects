@@ -1,8 +1,12 @@
-## Base Tailwind Project
+<p align="center"><img width="200" src="https://user-images.githubusercontent.com/7189795/83166497-04627780-a0dd-11ea-86c0-cf02398cc846.png" alt="Ribbit Logo" /></p>
 
-This is a skeleton Tailwind project that can be used for basic projects. It uses Laravel Mix to handle asset bundling as well as PurgeCSS to shrink file sizes.
+## About
 
-I use this mainly for mocking up simple designs with Tailwind, usually without using Javascript, although this starter project makes it easy to drop in your favorite framework.
+A recreation of the ever-popular site Reddit using Tailwind CSS and VueJS. It is a demonstration of how to create complex UIs with zero CSS, using only Tailwind CSS and its configuration file.
+
+The icons used on this site come from [Heroicons.dev](https://heroicons.dev) and were created by [Steve Schoger](https://steveschoger.com).
+
+**[View site &rarr;](https://zaknesler.github.io/projects/css/tailwind/ribbit/public/)**
 
 ### Get Started
 
