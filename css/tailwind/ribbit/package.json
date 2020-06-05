@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.8",
+        "cross-env": "^7.0",
+        "laravel-mix": "^5.0",
+        "tailwindcss": "^1.4",
+        "vue-template-compiler": "^2.6",
+        "vue": "^2.6"
+    }
+}
